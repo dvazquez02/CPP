@@ -44,7 +44,7 @@ int main(){
   ifstream inFile;
   ofstream outfile;
 
-  inFile.open("Ch9_Ex7Data.txt");
+  inFile.open("PlayerData.txt");
 
   if(!inFile){
     cout << "Input File Does Not Exist. Program Terminates!" << endl;
@@ -181,7 +181,7 @@ void getData(ifstream& inf, footballPlayerType list[], int length){
 
 void printPlayerData(footballPlayerType list[], int length, int playerNum){
   if (0 <= playerNum && playerNum < length)
-    cout << "Name: " << list[playerNum].name                                                << "Position: " << list[playerNum].position                                        << "; Touchdowns: " << list[playerNum].touchdowns                                  << "; Number of Catches: " << list[playerNum].catches                              << "; Passing Yards: " << list[playerNum].passingYards                             << "; Receiving Yards: " << list[playerNum].receivingYards                         << "; Rushing Yards: " << list[playerNum].rushingYards << endl << endl;
+    cout << "Name: " << list[playerNum].name                                                << "; Position: " << list[playerNum].position                                        << "; Touchdowns: " << list[playerNum].touchdowns                                  << "; Number of Catches: " << list[playerNum].catches                              << "; Passing Yards: " << list[playerNum].passingYards                             << "; Receiving Yards: " << list[playerNum].receivingYards                         << "; Rushing Yards: " << list[playerNum].rushingYards << endl << endl;
   else
     cout << "Invalid Player Number!" << endl << endl; 
 }
