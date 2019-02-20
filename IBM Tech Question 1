@@ -1,0 +1,23 @@
+//Programmer Name: David Vazquez
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+   int x;
+   x = 1;
+   
+   while (x <= 30){
+      if (x % 3 == 0)
+         cout << "Fizz" << endl;
+      else if (x % 5 == 0)
+         cout << "Buzz" << endl;
+      else if (x % 3 == 0 && x % 5 == 0)
+         cout << "FizzBuzz" << endl;
+      else
+         cout << x << endl;
+      x = x + 1
+   }
+   return 0;
+}
