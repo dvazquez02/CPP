@@ -1,0 +1,23 @@
+//Programmer Name: David Vazquez
+
+#include <iostream>
+#include <algorithm>
+
+int main(){
+  int ans;
+  int i;
+  int array[19] = {17, 14, 12, 5, 3, 2, 10, 20, 4, 9, 1, 16, 13, 6, 19, 8, 15, 18, 11};
+  sort(array, array + 20);
+    for (int i = 0; i < 19; i++){
+    cout << array[i+1] << ' ';
+  }
+    for (int i = 0;i < 19; i++){
+      if(array[i]+1==array[i+1]){}
+      else{
+      ans = array[i] + 1;
+      else{
+      ans = array[i] + 1;
+    }
+  }
+  cout << "\nThe missing Number is " << ans; 
+}
